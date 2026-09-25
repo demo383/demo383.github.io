@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Krishna — Indian Kitchen & Catering</title>
+  <meta name="description" content="A modern demo website for Krishna Catering & Restaurant in Farmington Hills, Michigan." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1900&q=85" fetchpriority="high">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=900&q=90">
+</head>
+<body>
+  <div class="announcement">
+    <span>Vegetarian Indian kitchen • Dine-in • Takeout • Catering</span>
+    <a href="#catering">Plan your next event <span>↗</span></a>
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Krishna home">
+      <span class="brand-mark" aria-hidden="true"><span></span><i></i><b></b></span>
+      <span class="brand-copy"><strong>KRISHNA</strong><small>INDIAN KITCHEN · CATERING</small></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#menu">Menu</a>
+      <a href="#story">Our story</a>
+      <a href="#catering">Catering</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" aria-hidden="true">
+      <a href="#menu">Menu</a><a href="#story">Our story</a><a href="#catering">Catering</a><a href="#visit">Visit</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" type="button" aria-label="Search menu">⌕</button>
+      <button class="cart-btn" id="cartBtn" type="button" aria-label="Open cart">
+        <span>Order</span><strong id="cartCount">0</strong>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-pattern"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Farmington Hills · Michigan</p>
+          <h1>Big flavors.<br><em>Warm</em> tables.</h1>
+          <p class="hero-lede">Vegetarian Indian comfort food, street favorites, and celebration-ready catering — served with the feeling of home.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#menu">Explore the menu <span>↓</span></a>
+            <a class="btn btn-ghost" href="#catering">Catering for 10–1000 <span>→</span></a>
+          </div>
+          <div class="hero-proof">
+            <span class="proof-item"><strong>Since 1994</strong><small>Family founded</small></span>
+            <span class="proof-dot"></span>
+            <span class="proof-item"><strong>100% vegetarian</strong><small>Jain & vegan options</small></span>
+          </div>
+        </div>
+        <div class="hero-card-wrap">
+          <div class="hero-card">
+            <div class="hero-card-image" role="img" aria-label="Indian vegetarian thali spread"></div>
+            <div class="hero-card-meta">
+              <div>
+                <span class="kicker">Today’s mood</span>
+                <h3>Pass the papad.</h3>
+              </div>
+              <span class="round-arrow">↗</span>
+            </div>
+          </div>
+          <div class="hero-note">Homestyle • Freshly made • Built for sharing</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Popular dishes">
+      <div class="ticker-track" aria-hidden="true">
+        <div class="ticker-group"><span>Masala Dosa</span><b>✦</b><span>Dabeli</span><b>✦</b><span>Pav Bhaji</span><b>✦</b><span>Paneer Biriyani</span><b>✦</b><span>Jalebi</span><b>✦</b><span>Mango Lassi</span><b>✦</b></div>
+        <div class="ticker-group"><span>Masala Dosa</span><b>✦</b><span>Dabeli</span><b>✦</b><span>Pav Bhaji</span><b>✦</b><span>Paneer Biriyani</span><b>✦</b><span>Jalebi</span><b>✦</b><span>Mango Lassi</span><b>✦</b></div>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Made to be craved</p>
+            <h2>A menu that <em>travels</em>.</h2>
+          </div>
+          <p class="section-intro">From South Indian breakfast classics to Gujarati favorites, chaat, Indo-Chinese fusion, sweets, and everyday comfort plates.</p>
+        </div>
+
+        <div class="menu-toolbar">
+          <div class="category-tabs" role="tablist" aria-label="Menu categories">
+            <button class="active" data-category="all" type="button">All</button>
+            <button data-category="street" type="button">Street favorites</button>
+            <button data-category="south" type="button">South Indian</button>
+            <button data-category="mains" type="button">Mains</button>
+            <button data-category="sweets" type="button">Sweets & drinks</button>
+          </div>
+          <button class="text-btn" id="openMenuBtn" type="button">View full menu <span>↗</span></button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid"></div>
+        <div class="menu-footnote">Demo prices shown for presentation purposes. Replace with verified current carryout / dine-in pricing before launch.</div>
+      </div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-image" role="img" aria-label="Krishna restaurant exterior"></div>
+      <div class="story-copy">
+        <p class="eyebrow">The Krishna story</p>
+        <h2>From a home kitchen to a <em>community table</em>.</h2>
+        <p>Krishna Catering & Restaurant was established in 1994 by Manu and Ila Patel, growing from a love of cooking at home and at the temple into a neighborhood destination for vegetarian Indian food.</p>
+        <p>Today, the menu brings together North and South Indian favorites, Gujarati and Punjabi dishes, street-style snacks, and Indo-Chinese fusion — with options for Jain and vegan diners.</p>
+        <div class="story-stats">
+          <div><strong>30+</strong><span>years of service</span></div>
+          <div><strong>4</strong><span>regional food traditions</span></div>
+          <div><strong>1,000</strong><span>catering guests supported</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience-section section">
+      <div class="container">
+        <div class="section-head compact">
+          <div>
+            <p class="eyebrow">More than a meal</p>
+            <h2>Your table, <em>your way</em>.</h2>
+          </div>
+          <p class="section-intro">Built for quick lunches, family dinners, weekend cravings, and milestone celebrations.</p>
+        </div>
+        <div class="experience-grid">
+          <article class="experience-card large"><span class="experience-icon">01</span><div><h3>Dine in</h3><p>Settle into a warm, relaxed room designed for sharing plates and lingering a little longer.</p></div><a href="#visit">See the space →</a></article>
+          <article class="experience-card"><span class="experience-icon">02</span><div><h3>Takeout</h3><p>Call ahead or order online for an easy pickup experience, including drive-thru pickup.</p></div><a href="#menu">Start an order →</a></article>
+          <article class="experience-card"><span class="experience-icon">03</span><div><h3>Delivery</h3><p>Meet the same great menu at home through supported delivery partners.</p></div><a href="#visit">Delivery options →</a></article>
+          <article class="experience-card"><span class="experience-icon">04</span><div><h3>Private parties</h3><p>Use the meeting space and customized menus for birthdays, pujas, showers, and gatherings.</p></div><a href="#catering">Plan a party →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="catering-section" id="catering">
+      <div class="container catering-inner">
+        <div class="catering-copy">
+          <p class="eyebrow">Catering & events</p>
+          <h2>Bring Krishna to the <em>whole room</em>.</h2>
+          <p>Customized menus for weddings, receptions, graduations, pujas, business meetings, and family gatherings. Choose buffet service, street-side stations, live preparation, or a mix.</p>
+          <div class="catering-pills"><span>Custom menus</span><span>Buffet setup</span><span>Jain / vegan options</span><span>10–1000 guests</span></div>
+          <button class="btn btn-light" id="cateringBtn" type="button">Start planning your event <span>→</span></button>
+        </div>
+        <div class="catering-visual">
+          <div class="catering-main-image" role="img" aria-label="Indian catering buffet"></div>
+          <div class="floating-card"><span>From the current catering menu</span><strong>Classic • Deluxe • Tray service</strong><small>Ask the catering team for a customized quote.</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section section">
+      <div class="container">
+        <div class="section-head compact">
+          <div>
+            <p class="eyebrow">On the table</p>
+            <h2>A little <em>color</em> goes a long way.</h2>
+          </div>
+          <span class="gallery-caption">Food photography can be replaced with the restaurant’s own images at launch.</span>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item g1"></div>
+          <div class="gallery-item g2"></div>
+          <div class="gallery-item g3"></div>
+          <div class="gallery-item g4"></div>
+          <div class="gallery-item g5"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-section section">
+      <div class="container reviews-inner">
+        <div class="review-lead"><p class="eyebrow">What guests remember</p><h2>Food that feels like <em>home</em>.</h2><p class="review-note">Selected review themes are presented as a design demo and should be replaced by approved customer testimonials before launch.</p></div>
+        <div class="review-card"><div class="stars">★★★★★</div><blockquote>“Fresh, tasty, good quantity… the kind of place you come back to with family.”</blockquote><span>Guest sentiment snapshot</span></div>
+        <div class="review-card offset"><div class="stars">★★★★★</div><blockquote>“A broad vegetarian menu with plenty of favorites for a full family table.”</blockquote><span>Guest sentiment snapshot</span></div>
+      </div>
+    </section>
+
+    <section class="visit-section" id="visit">
+      <div class="container visit-grid">
+        <div class="visit-card">
+          <p class="eyebrow">Come by</p>
+          <h2>Let’s make it <em>delicious</em>.</h2>
+          <div class="visit-info">
+            <div><span class="label">Address</span><strong>29206 Orchard Lake Rd<br>Farmington Hills, MI 48334</strong></div>
+            <div><span class="label">Phone</span><a href="tel:17345133663">734.513.FOOD (3663)</a></div>
+            <div><span class="label">Hours</span><strong>Tue–Thu 11am–9pm<br>Fri–Sat 11am–10pm<br>Sun 12pm–8pm · Mon closed</strong></div>
+          </div>
+          <div class="visit-actions"><a class="btn btn-primary" href="tel:17345133663">Call to order <span>→</span></a><a class="btn btn-ghost dark" target="_blank" rel="noreferrer" href="https://www.google.com/maps/search/?api=1&query=29206+Orchard+Lake+Rd+Farmington+Hills+MI+48334">Get directions <span>↗</span></a></div>
+        </div>
+        <div class="map-card" aria-label="Map placeholder showing restaurant location">
+          <div class="map-surface">
+            <div class="map-grid"></div>
+            <div class="map-road r1"></div><div class="map-road r2"></div><div class="map-road r3"></div>
+            <div class="map-label ml1">Orchard Lake Rd</div><div class="map-label ml2">Farmington Hills</div>
+            <div class="map-pin"><span>✦</span><strong>KRISHNA</strong><small>29206 Orchard Lake Rd</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <div><a class="brand footer-brand" href="#top"><span class="brand-mark"><span></span><i></i><b></b></span><span class="brand-copy"><strong>KRISHNA</strong><small>INDIAN KITCHEN · CATERING</small></span></a><p>Vegetarian Indian cooking for everyday cravings and unforgettable gatherings.</p></div>
+      <div class="footer-links"><a href="#menu">Menu</a><a href="#catering">Catering</a><a href="#story">Our story</a><a href="#visit">Visit</a></div>
+      <div class="footer-contact"><span>734.513.FOOD</span><span>email@krishnacatering.com</span><span>Farmington Hills, Michigan</span></div>
+    </div>
+    <div class="container footer-bottom"><span>Website concept / demo redesign</span><span>© 2026 Krishna Catering & Restaurant</span></div>
+  </footer>
+
+  <div class="mobile-order-bar" id="mobileOrderBar" aria-hidden="true"><button type="button" id="mobileOrderBtn"><span><b id="mobileOrderCount">0</b> items</span><strong id="mobileOrderTotal">$0.00</strong><span>View order →</span></button></div>
+
+  <div class="search-panel" id="searchPanel" aria-hidden="true">
+    <div class="search-panel-inner"><button class="close-btn" id="searchClose" type="button">×</button><p class="eyebrow">Find a favorite</p><h2>What are you craving?</h2><input id="searchInput" type="search" placeholder="Try “dosa”, “paneer”, “sweet”..." autocomplete="off"><div id="searchResults"></div></div>
+  </div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-head"><div><span class="eyebrow">Your order</span><h2>Ready when you are.</h2></div><button class="close-btn" id="cartClose" type="button">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-bottom"><div class="cart-total"><span>Total</span><strong id="cartTotal">$0.00</strong></div><button class="btn btn-primary full" id="checkoutBtn" type="button">Continue to checkout <span>→</span></button><small>Demo checkout — no payment is processed.</small></div>
+  </aside>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close-btn" id="modalClose" type="button">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
