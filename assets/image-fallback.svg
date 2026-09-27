@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6e2630"/><stop offset="1" stop-color="#db6d21"/></linearGradient>
+  <radialGradient id="plate"><stop offset="0" stop-color="#fffaf4"/><stop offset=".78" stop-color="#f2e6d7"/><stop offset="1" stop-color="#d8c2aa"/></radialGradient>
+</defs>
+<rect width="1200" height="900" fill="url(#bg)"/>
+<g opacity=".14" fill="#fff"><circle cx="160" cy="130" r="9"/><circle cx="1040" cy="170" r="7"/><circle cx="980" cy="720" r="11"/><circle cx="180" cy="740" r="6"/></g>
+<ellipse cx="600" cy="500" rx="370" ry="255" fill="#2a1b18" opacity=".28"/>
+<ellipse cx="600" cy="470" rx="350" ry="245" fill="url(#plate)"/>
+<circle cx="600" cy="460" r="145" fill="#f3a94e"/>
+<path d="M475 470c70-90 180-90 250 0-55 105-195 105-250 0Z" fill="#6e2630" opacity=".9"/>
+<circle cx="505" cy="365" r="52" fill="#2f7d4b"/>
+<circle cx="705" cy="365" r="48" fill="#d95a32"/>
+<circle cx="490" cy="570" r="50" fill="#e7b63e"/>
+<circle cx="710" cy="570" r="52" fill="#fff2d9"/>
+<g fill="#7aa45e"><ellipse cx="600" cy="255" rx="26" ry="60" transform="rotate(-28 600 255)"/><ellipse cx="650" cy="260" rx="24" ry="56" transform="rotate(24 650 260)"/></g>
+<text x="600" y="785" text-anchor="middle" fill="#fff8ef" font-family="Georgia,serif" font-size="46" font-style="italic">Krishna · Indian Kitchen</text>
+<text x="600" y="832" text-anchor="middle" fill="#fff8ef" font-family="Arial,sans-serif" font-size="18" letter-spacing="5">FRESH · VEGETARIAN · MADE TO SHARE</text>
+</svg>
