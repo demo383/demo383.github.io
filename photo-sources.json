@@ -1,0 +1,17 @@
+{
+  "hero": {"url": "https://images.unsplash.com/photo-1563379091339-03246963d5f5?auto=format&fit=crop&w=1600&q=85", "file": "hero-biryani.jpg"},
+  "story": {"url": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=1400&q=85", "file": "story-curry.jpg"},
+  "samosa": {"url": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=750&q=85", "file": "samosas.jpg"},
+  "dine": {"url": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=1300&q=85", "file": "paneer-curry.jpg"},
+  "catering": {"url": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=1250&q=85", "file": "tandoori.jpg"},
+  "biryani": {"url": "https://images.unsplash.com/photo-1563379091339-03246963d5f5?auto=format&fit=crop&w=900&q=85", "file": "menu-biryani.jpg"},
+  "curry": {"url": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=900&q=85", "file": "menu-curry.jpg"},
+  "paneer": {"url": "https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=900&q=85", "file": "menu-paneer.jpg"},
+  "appetizers": {"url": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=85", "file": "menu-starters.jpg"},
+  "tandoor": {"url": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=900&q=85", "file": "menu-tandoori.jpg"},
+  "dosa": {"url": "https://images.unsplash.com/photo-1630383249896-424e482c7898?auto=format&fit=crop&w=900&q=85", "file": "menu-dosa.jpg"},
+  "bread": {"url": "https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?auto=format&fit=crop&w=900&q=85", "file": "menu-naan.jpg"},
+  "chinese": {"url": "https://images.unsplash.com/photo-1613292443284-8d10ef9383f1?auto=format&fit=crop&w=900&q=85", "file": "menu-indo-chinese.jpg"},
+  "desserts": {"url": "https://images.unsplash.com/photo-1601302017917-26e95d3e5d67?auto=format&fit=crop&w=900&q=85", "file": "menu-dessert.jpg"},
+  "drinks": {"url": "https://images.unsplash.com/photo-1615485925600-97237c4fc1ec?auto=format&fit=crop&w=900&q=85", "file": "menu-drinks.jpg"}
+}

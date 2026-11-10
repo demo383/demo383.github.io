@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#163b30">
+<meta name="description" content="Kurry's Indian Cuisine — soulful biryanis, South Indian favorites, comforting curries and warm hospitality in Troy and Farmington Hills, Michigan.">
+<title>Kurry's | Indian Cuisine — A Taste of Home</title>
+<link rel="icon" type="image/svg+xml" href="assets/brand.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script defer src="data.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="progress-meter" id="scrollMeter" aria-hidden="true"></div>
+<div class="topline"><span>✦ &nbsp; WARM HOSPITALITY. TIMELESS INDIAN FLAVORS. &nbsp; ✦</span><span>TROY &nbsp; · &nbsp; FARMINGTON HILLS, MICHIGAN</span></div>
+<header class="header" id="header">
+  <a class="brand" href="#top" aria-label="Kurry's Indian Cuisine home">
+   <span class="brand-box" aria-hidden="true">K<span class="brand-dot">.</span></span>
+   <span class="brand-name">Kurry's<small>INDIAN CUISINE</small></span>
+  </a>
+  <nav id="mainNav" class="nav" aria-label="Main navigation">
+    <a href="#story">OUR KITCHEN</a><a href="#menu">EXPLORE MENU</a><a href="#dine">DINE IN</a><a href="#locations">LOCATIONS</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="branch-switch" id="branchToggle" type="button" aria-label="Change restaurant location"><span class="branch-pin" aria-hidden="true">⌖</span><span id="currentBranch">FARMINGTON HILLS</span><span aria-hidden="true">⌄</span></button>
+    <button id="cartToggle" class="cart-trigger" type="button" aria-label="Open your basket"><span class="bag-illustration" aria-hidden="true">♧</span><span class="cart-label">BASKET</span><span class="cart-count" id="cartCount">0</span></button>
+    <button class="mobile-nav-btn" id="navToggle" aria-label="Open navigation" aria-expanded="false" type="button">☰</button>
+  </div>
+</header>
+<main id="main">
+<section class="hero" id="top">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <div class="hero-intro"><span class="ornament">✻</span><span>WELCOME TO KURRY'S INDIAN CUISINE</span><span class="hairline"></span></div>
+      <h1>Every dish<br>has a <em>story.</em><br>Every meal,<br>a <em>memory.</em></h1>
+      <p class="hero-description">Authentic Indian flavors, patiently prepared and meant to be shared. From our fragrant biryanis to comforting curries, there’s always room at our table.</p>
+      <div class="hero-buttons"><a class="action action--lime" href="#menu">Explore Our Menu <span>↗</span></a><button type="button" data-mode="dine" class="action action--ghost">Dine With Us <span>↗</span></button></div>
+      <div class="hero-meta"><span class="mini-flower">✼</span><span>CRAFTED WITH SPICE<br>SHARED WITH LOVE</span><span class="hero-meta-divider"></span><span>INDIAN CUISINE<br>IN METRO DETROIT</span></div>
+    </div>
+    <div class="hero-art" id="heroArt">
+      <div class="hero-photo-frame"><img class="hero-photo" fetchpriority="high" src="https://images.unsplash.com/photo-1563379091339-03246963d5f5?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" alt="Fragrant Indian biryani served on a platter"></div>
+      <div class="hero-sticker"><span>made for</span><strong>sharing</strong><span>✦ &nbsp; since always &nbsp; ✦</span></div>
+      <div class="hero-bottom-tag"><span>01 / A LITTLE TASTE OF INDIA</span><span aria-hidden="true">↙</span></div>
+    </div>
+  </div>
+  <div class="hero-flourish" aria-hidden="true">❊</div>
+</section>
+
+<section class="ways" id="ways" aria-labelledby="waysHeading">
+  <div class="ways-heading"><div><span class="section-overline">HOW WOULD YOU LIKE TO ENJOY?</span><h2 id="waysHeading">There’s a place for <em>everyone.</em></h2></div><p>At our table, at yours, or on the way home — great food finds a way to bring us together.</p></div>
+  <div class="way-grid">
+    <button type="button" class="way-card way-card--lilac" data-mode="dine"><span class="way-top"><span class="way-number">01</span><span class="way-arrow">↗</span></span><span class="way-icon" aria-hidden="true">♧</span><span class="way-bottom"><h3>Dine In</h3><p>Pull up a chair. Browse the menu and build a table order.</p><span class="way-link">Plan your dine-in experience <span>↗</span></span></span></button>
+    <button type="button" class="way-card way-card--lime" data-mode="pickup"><span class="way-top"><span class="way-number">02</span><span class="way-arrow">↗</span></span><span class="way-icon" aria-hidden="true">◈</span><span class="way-bottom"><h3>Pickup</h3><p>Choose the dishes you love and enjoy them wherever you go.</p><span class="way-link">Start a pickup basket <span>↗</span></span></span></button>
+    <button type="button" class="way-card way-card--blue" data-mode="delivery"><span class="way-top"><span class="way-number">03</span><span class="way-arrow">↗</span></span><span class="way-icon" aria-hidden="true">✧</span><span class="way-bottom"><h3>Delivery</h3><p>All your favorites, brought to your door by our ordering partner.</p><span class="way-link">See delivery options <span>↗</span></span></span></button>
+  </div>
+  <p class="ways-disclaimer">Ordering here is an interactive preview. Dine-in and pickup baskets are not transmitted to the restaurant.</p>
+</section>
+
+<section class="story" id="story">
+ <div class="story-visual">
+  <figure class="story-image-primary"><img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Warm, richly spiced Indian curry with fresh herbs" loading="lazy"><figcaption>GOOD FOOD TAKES TIME. GREAT FOOD BRINGS PEOPLE TOGETHER.</figcaption></figure>
+  <figure class="story-image-secondary"><img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&amp;fit=crop&amp;w=750&amp;q=85" alt="Golden samosas, a classic Indian appetizer" loading="lazy"></figure>
+  <span class="story-emblem" aria-hidden="true">✺</span>
+ </div>
+ <div class="story-copy"><span class="section-overline">✦ &nbsp; FROM OUR KITCHEN, WITH LOVE</span><h2>A little spice.<br>A lot of <em>heart.</em></h2><div class="story-rule"></div><p>Some meals stay with you long after the last bite. That's what we love about Indian food — the aroma of fresh spices, the joy of sharing, and the comfort of familiar flavors.</p><p>Come for a quick lunch, stay for a long conversation, or gather your favorite people around a generous spread. There’s always something delicious waiting.</p><a class="text-link" href="#menu">Discover our dishes <span>↗</span></a><span class="story-signet">✳ &nbsp; INDIAN FOOD, MADE TO BE SHARED</span></div>
+</section>
+
+<section class="section menu-section" id="menu">
+ <div class="menu-title-row"><div><span class="section-overline">THE HEART OF OUR KITCHEN</span><h2>Discover the <em>menu.</em></h2><p>Rich curries, fragrant biryanis, tandoor favorites and a little something sweet.</p></div><div class="menu-subtitle"><span class="menu-symbol">❋</span><p>Find a favorite, try something new, and make it your own.</p><div class="mode-context" id="modeContext">DINE IN · FARMINGTON HILLS · DEMO</div></div></div>
+ <div class="menu-layout">
+   <aside class="menu-sidebar"><div class="category-label">EXPLORE BY CATEGORY</div><div class="category-stack" id="categoryStack"></div><div class="sidebar-quote"><span>✿</span><strong>Good food.<br>Good company.</strong><small>Always a reason to gather.</small></div></aside>
+   <div class="menu-main">
+    <div class="menu-toolbar"><label class="search-box"><span aria-hidden="true">⌕</span><input id="menuSearch" type="search" placeholder="Search biryani, paneer, naan…" autocomplete="off" aria-label="Search the menu"></label><label class="veg-toggle"><input id="vegOnly" type="checkbox"><span class="switch-track"></span> Vegetarian</label><label class="popular-toggle"><input id="featuredOnly" type="checkbox"><span class="switch-track"></span> Favorites</label></div>
+    <div class="menu-status"><h3 id="menuCategoryHeading">The whole menu</h3><span id="menuResultsCount">0 DISHES</span></div>
+    <div class="dish-grid" id="menuGrid"></div>
+    <div id="emptyMenu" class="empty-menu" hidden><span>✳</span><h3>No dishes found</h3><p>Try another category or search term.</p><button type="button" id="clearFilters" class="text-action">Clear filters →</button></div>
+    <div class="load-wrap"><button id="loadMore" type="button" class="load-button">Discover more dishes <span>↓</span></button></div>
+   </div>
+ </div>
+ <p class="menu-price-note">Menu prices shown are reference prices from public menus. Items, prices and availability may vary by location.</p>
+</section>
+
+<section class="dine-feature" id="dine">
+  <div class="dine-image"><img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&amp;fit=crop&amp;w=1300&amp;q=85" alt="Delicious Indian paneer curry ready for a shared table" loading="lazy"><div class="dine-image-stamp">✦ &nbsp; GOOD FOOD IS BEST SHARED &nbsp; ✦</div></div>
+  <div class="dine-copy"><span class="section-overline">✦ &nbsp; A SEAT AT OUR TABLE</span><h2>Stay a while.<br><em>Savor it all.</em></h2><p>Birthdays, family dinners, a quiet meal for two — the moments worth remembering often happen around the table.</p><div class="dine-tags"><span>Warm hospitality</span><span>Indian favorites</span><span>Good company</span></div><button type="button" class="action action--lime" data-mode="dine">Start dine-in ordering <span>↗</span></button><small>Interactive demo only. Please contact Kurry’s for reservations or actual orders.</small></div>
+</section>
+
+<section class="section location-section" id="locations"><div class="location-heading"><span class="section-overline">FIND YOUR NEAREST KURRY'S</span><h2>Two kitchens.<br><em>One warm welcome.</em></h2><p>Visit us in Farmington Hills or Troy, Michigan. We can’t wait to serve you.</p></div><div class="location-grid" id="locationGrid"></div></section>
+<section class="catering-band" id="catering"><div class="catering-content"><span class="section-overline">✦ &nbsp; FEASTS WORTH REMEMBERING</span><h2>Make every gathering<br><em>a celebration.</em></h2><p>Family occasions, office lunches, birthdays or a special day — let the flavors of India bring everyone together.</p><button type="button" id="cateringOpen" class="action action--lime">Ask about catering <span>↗</span></button></div><div class="catering-photo"><img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&amp;fit=crop&amp;w=1250&amp;q=85" alt="Indian tandoori specialties prepared for sharing" loading="lazy"></div></section>
+</main>
+<footer class="footer"><div class="footer-top"><div class="footer-brand"><strong>Kurry's<span>.</span></strong><small>INDIAN CUISINE</small><p>A taste of home, a table for everyone.</p></div><div class="footer-link-group"><p>EXPLORE</p><div class="footer-links"><a href="#story">Our Kitchen</a><a href="#menu">Our Menu</a><a href="#dine">Dine In</a><a href="#locations">Locations</a></div></div><div class="footer-link-group"><p>COME VISIT</p><span>Farmington Hills · Troy<br>Michigan, USA</span><a href="#locations">Find your Kurry's →</a></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> Kurry's · Website design concept</span><span>Prototype only — no live orders or payments. <a href="photo-credits.html">Photo sources</a></span><a href="#top">Back to top ↑</a></div></footer>
+<div class="overlay" id="overlay" hidden></div>
+<section class="panel panel--choice" id="choicePanel" aria-label="Choose location" role="dialog" aria-modal="true" hidden><div class="panel-top"><span>CHOOSE YOUR RESTAURANT</span><button type="button" class="icon-close" data-close aria-label="Close dialog">×</button></div><h2>Two locations,<br>one warm welcome.</h2><p>Select your kitchen. Changing locations keeps each basket separate.</p><div class="branch-options" id="branchOptions"></div></section>
+<section class="panel panel--setup" id="setupPanel" aria-labelledby="setupTitle" role="dialog" aria-modal="true" hidden><div class="panel-top"><span id="setupEyebrow">YOUR DINING EXPERIENCE</span><button type="button" class="icon-close" data-close aria-label="Close dialog">×</button></div><h2 id="setupTitle">A table for you.</h2><p id="setupLead">Get your table ready, browse the dishes, and build a demo order.</p><form id="setupForm" class="stack-form"><label>CHOOSE A KITCHEN<select name="location" id="setupBranch"><option value="farmington">Farmington Hills</option><option value="troy">Troy</option></select></label><div class="double-field"><label>GUESTS<select name="guests" id="setupGuests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></label><label>TABLE NUMBER <span>(OPTIONAL NOW)</span><input name="table" id="setupTable" maxlength="12" placeholder="E.g. 08"></label></div><div id="dineSetupNote" class="setup-info"><strong>ALREADY AT YOUR TABLE?</strong><br>Enter your table number and add dishes. If you're planning a visit, you can leave it blank while browsing. This is not a reservation.</div><button class="action action--ink full" type="submit" id="setupSubmit">BROWSE DINE-IN MENU <span>↗</span></button></form></section>
+<section class="panel panel--delivery" id="deliveryPanel" aria-labelledby="deliveryTitle" role="dialog" aria-modal="true" hidden><div class="panel-top"><span>DELIVERY PARTNERS</span><button type="button" class="icon-close" data-close aria-label="Close dialog">×</button></div><h2 id="deliveryTitle">A feast at home.</h2><p>Delivery is handled through the restaurant's third-party ordering service. Your demo bag won't transfer.</p><div id="deliveryBranchOptions" class="branch-options"></div></section>
+<aside class="drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" hidden><div class="drawer-heading"><div><p class="tiny-label">YOUR ORDER</p><h2 id="cartTitle">Your basket</h2></div><button type="button" class="icon-close" data-close aria-label="Close bag">×</button></div><div class="cart-meta"><div><strong id="cartModeLabel">DINE IN</strong><small id="cartBranchLabel">FARMINGTON HILLS</small></div><button type="button" id="cartEditPlan">CHANGE PLAN ↗</button></div><div id="cartLines" class="cart-lines"></div><div class="drawer-footer"><div class="total-row"><span>ESTIMATED SUBTOTAL</span><strong id="cartSubtotal">$0.00</strong></div><p>Reference pricing only. Taxes, extras and availability aren't calculated. Nothing is sent to Kurry's.</p><button type="button" id="checkoutOpen" class="action action--lime full">CONTINUE · DEMO <span>↗</span></button></div></aside>
+<section class="panel panel--dish" id="dishPanel" aria-labelledby="dishTitle" aria-modal="true" role="dialog" hidden><button type="button" class="icon-close dish-close" data-close aria-label="Close dish">×</button><div class="dish-panel-image"><img id="dishImage" alt="Food photograph illustrating this menu category" src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398"></div><div class="dish-panel-info"><div class="tiny-label" id="dishType">KITCHEN FAVORITE</div><h2 id="dishTitle">Dish</h2><p id="dishDescription">Dish description.</p><div class="dish-options"><span>CUSTOMIZE YOUR ORDER</span><label>SPICE PREFERENCE <select id="dishSpice"><option>Mild</option><option selected>Medium</option><option>Hot</option><option>Extra hot</option></select></label><label>SPECIAL REQUEST <textarea id="dishNotes" placeholder="Any special requests? (not guaranteed)" rows="2" maxlength="200"></textarea></label><p>For food allergies or serious dietary restrictions, contact the restaurant directly.</p></div><div class="dish-actionbar"><div class="qty"><button type="button" id="dishQtyDown" aria-label="Decrease quantity">−</button><output id="dishQty">1</output><button type="button" id="dishQtyUp" aria-label="Increase quantity">+</button></div><button type="button" class="action action--lime" id="dishAdd">ADD <span id="dishPrice">$0.00</span> ↗</button></div></div></section>
+<section class="panel panel--checkout" id="checkoutPanel" aria-labelledby="checkoutTitle" role="dialog" aria-modal="true" hidden><div class="panel-top"><span>ORDER REVIEW / PROTOTYPE</span><button type="button" class="icon-close" data-close aria-label="Close checkout">×</button></div><h2 id="checkoutTitle">Almost ready.</h2><div class="checkout-warning">INTERACTIVE DEMO ONLY — No order is submitted and no payment is collected. Call the restaurant to place or confirm a real order.</div><form id="checkoutForm" class="stack-form"><label>NAME<input name="name" autocomplete="name" minlength="2" placeholder="Full name" required></label><label>PHONE<input name="phone" type="tel" autocomplete="tel" pattern="[0-9+() .-]{7,20}" placeholder="(248) 555-0100" required></label><div class="double-field" id="checkoutDineFields"><label>TABLE NUMBER<input name="table" id="checkoutTable" maxlength="12" placeholder="e.g. 08"></label><label>GUESTS<select name="guests" id="checkoutGuests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></label></div><label id="checkoutPickupField">PICKUP PREFERENCE<select name="pickup"><option>As soon as possible (demo)</option><option>Lunch (demo)</option><option>Dinner (demo)</option></select></label><label>ADDITIONAL NOTES<textarea name="notes" rows="2" maxlength="300" placeholder="Optional notes"></textarea></label><div class="total-row"><span>ESTIMATED SUBTOTAL</span><strong id="checkoutTotal">$0.00</strong></div><button type="submit" class="action action--ink full">SAVE DEMO ORDER <span>↗</span></button></form><div id="checkoutSuccess" class="success-box" aria-live="polite" hidden></div></section>
+<section class="panel panel--catering" id="cateringPanel" aria-modal="true" aria-labelledby="cateringTitle" role="dialog" hidden><div class="panel-top"><span>CELEBRATIONS & CATERING</span><button type="button" class="icon-close" data-close aria-label="Close catering">×</button></div><h2 id="cateringTitle">Let us cater your celebration.</h2><p>Prepare an email inquiry with your event details. You'll review it in your own email app before sending.</p><form id="cateringForm" class="stack-form"><label>YOUR NAME<input name="name" required placeholder="Full name"></label><label>YOUR EMAIL<input name="email" type="email" required placeholder="you@example.com"></label><div class="double-field"><label>EVENT DATE<input name="date" type="date" id="cateringDate" required></label><label>GUESTS<input name="guests" type="number" min="1" max="10000" required placeholder="50"></label></div><label>LOCATION<select name="location"><option value="farmington">Farmington Hills</option><option value="troy">Troy</option></select></label><label>YOUR EVENT<textarea name="notes" maxlength="700" rows="3" placeholder="What are you planning?"></textarea></label><button type="submit" class="action action--ink full">OPEN EMAIL DRAFT <span>↗</span></button></form></section>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="mobile-cart" id="mobileCart" hidden><button type="button" id="mobileCartButton"><span><b id="mobileCartCount">0</b> IN YOUR BAG</span><b>VIEW BAG ↗</b><strong id="mobileCartTotal">$0.00</strong></button></div>
+</body></html>
